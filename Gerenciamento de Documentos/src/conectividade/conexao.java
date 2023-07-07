@@ -1,7 +1,6 @@
 package conectividade;
 
 import java.sql.Connection;
-
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -18,13 +17,13 @@ public class conexao {
 		String servidor = "jdbc:mysql://localhost:3306/meu_banco_de_dados?allowPublicKeyRetrieval=true&useSSL=false";
 		
 
-		String usuario = "root";
-		String senha = "sebastiaoufam2021";
+		String usuario = "";
+		String senha = "";
 		
 		try(Connection conexao = DriverManager.getConnection(servidor, usuario, senha);
 			Statement instrucaoSQL = conexao.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY)){
 		
-			System.out.println("deu certo");
+			System.out.println("Tudo Funcionando");
 			
 		} catch(SQLException erro){
 			System.out.println(erro.getMessage());

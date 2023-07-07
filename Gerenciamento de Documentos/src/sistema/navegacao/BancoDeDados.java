@@ -17,12 +17,12 @@ public class BancoDeDados {
      * Usuário do banco de dados.
      */
 	
-	public static String usuario = "root";
+	public static String usuario = "";
 	
 	 /**
      * Senha do banco de dados.
      */
 	
-	public static String senha = "sebastiaoufam2021";
+	public static String senha = "";
 
 }
